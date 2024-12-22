@@ -1,8 +1,8 @@
 package Arrays;
 public class Linear_Search {
-    // Optimized linear search method
+    //declaring linearsearch funtion which takes two arguments 
     public static int linearSearch(int[] arr, int target) {
-        // Check for empty array
+        // Check if array is empty
         if (arr == null || arr.length == 0) {
             return -1;
         }
@@ -18,9 +18,9 @@ public class Linear_Search {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 2, 4, 6, 8, 10 };
-        int target = 6;
-        int result = linearSearch(arr, target);
+        int[] arr = { 2, 4, 6, 8, 10 };//Modify this array according to you
+        int target = 6;// can change the target according to your need
+        int result = linearSearch(arr, target);//applying linear seach on the given array
 
         if (result != -1) {
             System.out.println("Target found at index: " + result);
